@@ -40,7 +40,7 @@ I built this example using the following hardware and software.
 
 #### ESP32
 - Wemos Lolin D32 Pro V2.0.0 with 4MB RAM  
-- Micropython
+- Micropython v1.19.1 (2022-06-18) with SPIRAM [available here](https://micropython.org/download/esp32spiram/) 
 - aioble - used as a high-level asynchronous interface to bluetooth / BLE. Available as part of the
 
 #### Web server
