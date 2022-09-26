@@ -1,0 +1,78 @@
+body {
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nav-bar {
+  height: 60px;
+  width: 100%;
+  background-color: lightsteelblue;
+  color: #FFFFFF;
+  padding: 10px;
+  text-align: center;
+  vertical-align: baseline;
+  font-size: larger;
+}
+
+.button {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  min-width: 180px;
+  line-height: 20px;
+  list-style: none;
+  margin: 10px;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:focus {
+  background-color: #F082AC;
+
+}
+
+.summary_box {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  border-radius: 0.25em;
+  padding: 0.5em;
+
+  margin-right: 0.9em;
+  margin-top: 1em;
+
+}
+
+.summary_box:last-child {
+  margin-right: 0px;
+}
+
+.metric_value {
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.metric_title {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.units {
+  font-size: 0.33em;
+  font-weight: normal;
+
+}
