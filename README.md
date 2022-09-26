@@ -103,6 +103,11 @@ To connect open Google Chrome browser and navigate to one of the two links which
 
 Note that since you are using an adhoc SSL certificate Chrome will complain and you will need to explicitly complete navigation to the webpage. 
 
+### Web server - Github pages method
+Simply navigate here in Google Chrome (iOS, Android, Bluefy) or other web bluetooth compatible browser.
+
+https://wave1art.github.io/ESP32-Web-Bluetooth/
+
 ### Running the example
 1. Click on the _Connect_ button
 2. Identify your ESP32 device in the Chrome popup Bluetooth device scan
