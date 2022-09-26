@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="Web Bluetooth control for ESP32 sensor">
+    <link rel="icon" sizes="192x192" href="/static/img/favicon.png">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+<div class="nav-bar">
+    <h2>Web Bluetooth ESP32 Weather Sensor</h2>
+</div>
+<div id="status" class="container text-center">
+
+    <div class="row summary_box" style="height: 60px;">
+        <div class="col">Logging status:
+            <span id="logging_status">Paused</span>
+        </div>
+        <div class="col">Last observation:
+            <span class="col" id="last_obs_time">xx:xx:xx</span>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col summary_box" >
+            <div class="row"><div class="metric_title"> Apparent Wind Speed </div> </div>
+            <div class="row metric_value" >
+                <span id="wind_speed" > XX</span>
+                <span class="units">km/h</span>  </div>
+        </div>
+        <div class="col summary_box" >
+            <div class="row"><div class="metric_title">Apparent Wind Angle</div></div>
+            <div class="row metric_value">
+                <span id="wind_direction">XX </span>
+                <span class="units">degrees</span> </div>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col summary_box" >
+            <div class="row"><div class="metric_title"> Latitude </div> </div>
+            <div class="row metric_value" >
+                <span id="gps_lat" > XX</span>
+                <span class="units">degrees</span>  </div>
+        </div>
+        <div class="col summary_box" >
+            <div class="row"><div class="metric_title">Longitude</div></div>
+            <div class="row metric_value">
+                <span id="gps_lon">XX </span>
+                <span class="units">degrees</span> </div>
+        </div>
+    </div>
+</div>
+<div class="navbar fixed-bottom bg-light">
+    <div id="connect_button" class="button col" role="button">Connect</div>
+    <div id="start_stop_logging_button" class="button col" role="button">Start Logging</div>
+</div>
+
+</body>
+<footer>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="/static/js/app.js"></script>
+</footer>
+</html>
