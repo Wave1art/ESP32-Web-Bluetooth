@@ -3,6 +3,8 @@
 
 This example is designed to demonstrate the use of ESP32 Micropython together with Web Bluetooth. It could be a useful starting point for someone wishing to build a mobile weather station or similar device based on ESP32. 
 
+![img.png](img.png)
+
 There are a few potential advantages of using bluetooth to connect to and control an embedded device. For example, if your use case means that the embedded device is not in range of a WiFi router then you are able to connect to the device whilst still maintaining a cellular connection to the internet. Also, I have found that serving a user-friendly (aesthetically pleasing, feature rich) website from ESP32 tends to be quite slow. The advantage of the Web Bluetooth design pattern is that your website can be served using regular, more powerful, web infrastructure and the embedded device only provides raw data-points and controls. This is far lower overhead. 
 
 Additional benefits include the ability to use whichever web-framework you prefer, rather than trying to coerce your application into a highly modified framework which runs on a resource constrained embedded device (frustrating in my experience). By creating a Bluetooth interface it is a simple matter to extend your use-case with a native iOS or Android app.
@@ -106,9 +108,7 @@ Note that since you are using an adhoc SSL certificate Chrome will complain and 
 2. Identify your ESP32 device in the Chrome popup Bluetooth device scan
 3. Watch as the Placeholder values get updated with dummy data!  
 
-If everything is working correctly you should see something like the following:
-
-![img.png](img.png)
+If everything is working correctly you should see something like the image at the top of the page.
 
 
 ### Troubleshooting
