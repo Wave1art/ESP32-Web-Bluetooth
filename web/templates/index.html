@@ -8,13 +8,13 @@
 
 <body>
 <div class="nav-bar">
-    <h2>Web Bluetooth ESP32 Weather Sensor</h2>
+    <h2>WEB BLUETOOTH INTERFACE TEST</h2>
 </div>
 <div id="status" class="container text-center">
 
     <div class="row summary_box" style="height: 60px;">
         <div class="col">Logging status:
-            <span id="logging_status">Paused</span>
+            <span id="is_recording">Paused</span>
         </div>
         <div class="col">Last observation:
             <span class="col" id="last_obs_time">xx:xx:xx</span>
@@ -23,27 +23,57 @@
     </div>
     <div class="row">
         <div class="col summary_box" >
-            <div class="row"><div class="metric_title"> Apparent Wind Speed </div> </div>
+            <div class="row"><div class="metric_title"> DISTANCE </div> </div>
+            <div class="row metric_value" >
+                <span id="distance" > XX</span>
+                <span class="units">nm</span>  </div>
+        </div>
+        <div class="col summary_box" >
+            <div class="row"><div class="metric_title">MAX SPEED</div></div>
+            <div class="row metric_value">
+                <span id="max_speed">XX </span>
+                <span class="units">knots</span> </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col summary_box" >
+            <div class="row"><div class="metric_title"> APPARENT WIND SPEED </div> </div>
             <div class="row metric_value" >
                 <span id="wind_speed" > XX</span>
                 <span class="units">km/h</span>  </div>
         </div>
         <div class="col summary_box" >
-            <div class="row"><div class="metric_title">Apparent Wind Angle</div></div>
+            <div class="row"><div class="metric_title">APPARENT WIND ANGLE</div></div>
             <div class="row metric_value">
-                <span id="wind_direction">XX </span>
+                <span id="wind_angle">XX </span>
                 <span class="units">degrees</span> </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col summary_box" >
+            <div class="row"><div class="metric_title"> BOAT SPEED </div> </div>
+            <div class="row metric_value" >
+                <span id="speed" > XX</span>
+                <span class="units">knots</span>  </div>
+        </div>
+        <div class="col summary_box" >
+            <div class="row"><div class="metric_title">HEADING</div></div>
+            <div class="row metric_value">
+                <span id="heading">XX </span>
+                <span class="units">degrees</span> </div>
+        </div>
+    </div>
+
         <div class="row">
         <div class="col summary_box" >
-            <div class="row"><div class="metric_title"> Latitude </div> </div>
+            <div class="row"><div class="metric_title"> LATITUDE </div> </div>
             <div class="row metric_value" >
                 <span id="gps_lat" > XX</span>
                 <span class="units">degrees</span>  </div>
         </div>
         <div class="col summary_box" >
-            <div class="row"><div class="metric_title">Longitude</div></div>
+            <div class="row"><div class="metric_title">LONGITUDE</div></div>
             <div class="row metric_value">
                 <span id="gps_lon">XX </span>
                 <span class="units">degrees</span> </div>
